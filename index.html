@@ -3,56 +3,77 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Igreja Vida Nova - Cianorte PR</title>
+<title>GOCAR TECNOLOGIA - Sites Black & Gold que vendem | Cianorte PR</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{background:#080c1a;color:#fff;font-family:Arial;text-align:center;padding:20px}
-h1{color:#f59e0b;letter-spacing:6px;margin-top:20px;font-size:36px}
-.sub{color:#f59e0b88;font-size:12px;letter-spacing:2px}
-.card{max-width:380px;margin:20px auto;background:#111;border:1px solid #f59e0b;border-radius:20px;overflow:hidden}
-.card img{width:100%;height:380px;object-fit:cover}
-.topo{background:#1a1508;color:#f59e0b;padding:12px;display:flex;justify-content:space-between;font-weight:800;font-size:12px}
-.desc{background:#fff8e1;color:#222;padding:16px;text-align:left;font-size:14px;line-height:1.5}
-.btn{display:block;margin:16px;background:#f59e0b;color:#000;padding:14px;border-radius:10px;text-decoration:none;font-weight:900}
-.botoes{display:flex;gap:10px;justify-content:center;margin-top:20px}
-.botoes button{width:50px;height:50px;border-radius:50%;border:2px solid #f59e0b;background:#fff;font-size:20px}
-.botoes.ativo{background:#f59e0b;color:#000}
+body{background:#05070a;color:#fff;font-family:Arial,Helvetica,sans-serif}
+header{padding:20px;text-align:center;border-bottom:1px solid #f59e0b22}
+.logo{width:80px;height:80px;background:#0f0f0f;border:2px solid #f59e0b;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 12px;font-weight:900;color:#f59e0b;font-size:32px;letter-spacing:-2px}
+h1{color:#f59e0b;letter-spacing:5px;font-size:22px}
+.slogan{color:#fff7;font-size:12px;letter-spacing:3px;margin-top:4px}
+.hero{max-width:900px;margin:40px auto;padding:20px;text-align:center}
+.hero h2{font-size:42px;line-height:1.1}
+.hero h2 span{color:#f59e0b}
+.hero p{color:#fff8;margin-top:16px;font-size:16px}
+.grid{max-width:1000px;margin:30px auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;padding:20px}
+.card{background:#111;border:1px solid #ffffff14;border-radius:20px;overflow:hidden;transition:0.3s}
+.card:hover{border-color:#f59e0b;transform:translateY(-4px)}
+.card img{width:100%;height:200px;object-fit:cover}
+.card .info{padding:18px}
+.tag{color:#f59e0b;font-size:11px;letter-spacing:2px;font-weight:800}
+.card h3{margin:8px 0 6px;font-size:18px}
+.card p{color:#fff7;font-size:13px;line-height:1.4}
+.btn{display:block;margin-top:14px;background:#f59e0b;color:#000;text-align:center;padding:12px;border-radius:10px;text-decoration:none;font-weight:900}
+footer{text-align:center;padding:40px;color:#fff5;font-size:12px;border-top:1px solid #ffffff0f;margin-top:40px}
 </style>
 </head>
 <body>
-<h1>VIDA NOVA</h1>
-<div class="sub">CIANORTE - PR | DEMO WDECAR</div>
+<header>
+<div class="logo">GC</div>
+<h1>GOCAR TECNOLOGIA</h1>
+<div class="slogan">SITES BLACK & GOLD QUE VENDEM • CIANORTE PR</div>
+</header>
+
+<div class="hero">
+<h2>Sites que não são bonitinhos.<br><span>São máquinas de clientes.</span></h2>
+<p>Design preto e dourado, botão direto pro WhatsApp, pronto em 48h. De Cianorte pro Brasil.</p>
+</div>
+
+<div class="grid">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1504052434569-70ad5836ab65?w=600">
+<div class="info">
+<div class="tag">DEMO • IGREJA</div>
+<h3>Igreja Vida Nova</h3>
+<p>5 ministérios, cultos, endereço e WhatsApp direto. Modelo que vende pra qualquer igreja.</p>
+<a class="btn" href="./igreja/">Ver demonstração</a>
+</div>
+</div>
 
 <div class="card">
-<img id="foto" src="https://images.unsplash.com/photo-1504052434569-70ad5836ab65?w=600">
-<div class="topo"><span id="nome">PASTOR MARCOS</span><span id="tag">JOVENS</span></div>
-<div class="desc" id="texto">Ministério de Jovens com paixão por Jesus. Cultos Sábado 19h30. Rua das Flores 123 - Cianorte PR. Jeremias 29:11</div>
-<a class="btn" href="https://wa.me/5544988646234">FALAR NO WHATSAPP</a>
+<img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=600">
+<div class="info">
+<div class="tag">EM BREVE • BARBEARIA</div>
+<h3>Barbearia Black</h3>
+<p>Agendamento, cortes, preços e Instagram. Próximo lançamento da GOCAR.</p>
+<a class="btn" style="background:#222;color:#fff;border:1px solid #333" href="#">Em breve</a>
+</div>
 </div>
 
-<div class="botoes">
-<button onclick="m(0)" id="b0" class="ativo">🙏</button>
-<button onclick="m(1)" id="b1">👶</button>
-<button onclick="m(2)" id="b2">🎸</button>
-<button onclick="m(3)" id="b3">💑</button>
-<button onclick="m(4)" id="b4">🌍</button>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600">
+<div class="info">
+<div class="tag">EM BREVE • LOJA</div>
+<h3>Loja Street</h3>
+<p>Produtos, carrinho e WhatsApp. Pra quem vende roupa e precisa de loja online que vende.</p>
+<a class="btn" style="background:#222;color:#fff;border:1px solid #333" href="#">Em breve</a>
+</div>
+</div>
 </div>
 
-<script>
-const d=[
-{n:"PASTOR MARCOS",t:"JOVENS",f:"https://images.unsplash.com/photo-1504052434569-70ad5836ab65?w=600",x:"Ministério de Jovens. Cultos Sábado 19h30 com louvor e palavra. Rua das Flores 123 - Cianorte PR. Jeremias 29:11"},
-{n:"TIA ANA",t:"KIDS",f:"https://images.unsplash.com/photo-1596462502275-27bfdd2a6894?w=600",x:"Ministério Infantil com Tia Ana. Domingo 9h para 3 a 11 anos. Histórias bíblicas e lanche. Espaço seguro."},
-{n:"LOUVOR",t:"LOUVOR",f:"https://images.unsplash.com/photo-1514320290767-e2d6b037bb4d?w=600",x:"Louvor que toca a alma. Ensaios Quinta 20h. Se você canta ou toca, venha fazer parte."},
-{n:"CASAIS",t:"FAMÍLIA",f:"https://images.unsplash.com/photo-1529634597503-139d3726fed5?w=600",x:"Ministério de Casais. Encontro 2º Sábado 19h30 com jantar e palestra. Fortalecendo famílias."},
-{n:"MISSÕES",t:"MISSÕES",f:"https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600",x:"Ide por todo o mundo - Marcos 16:15. Apoio a 3 missionários. Próxima viagem Julho."}
-];
-function m(i){
-document.getElementById('foto').src=d[i].f;
-document.getElementById('nome').innerText=d[i].n;
-document.getElementById('tag').innerText=d[i].t;
-document.getElementById('texto').innerText=d[i].x;
-for(let k=0;k<5;k++)document.getElementById('b'+k).className=k==i?'ativo':'';
-}
-</script>
+<footer>
+GOCAR TECNOLOGIA • Cianorte PR • WhatsApp (44) 98864-6234<br>
+wdecar.github.io • Sites Black & Gold que vendem
+</footer>
 </body>
 </html>
