@@ -3,26 +3,56 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>wdecar | Sites Black & Gold</title>
+<title>Igreja Vida Nova - Cianorte PR</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{background:#0a0a0a;color:#fff;font-family:Arial}
-header{padding:20px;display:flex;justify-content:space-between;border-bottom:1px solid #222}
-.logo{font-weight:900} .logo span{color:#d4af37}
-.hero{padding:60px 20px;text-align:center}
-.hero h1{font-size:40px} .hero h1 span{color:#d4af37}
-.btn{display:inline-block;margin-top:20px;background:#d4af37;color:#000;padding:14px 28px;font-weight:800;text-decoration:none;border-radius:8px}
-.card{border:1px solid #222;margin:20px;padding:20px;border-radius:12px;background:#111}
-.card a{color:#d4af37;text-decoration:none;font-weight:bold}
+body{background:#080c1a;color:#fff;font-family:Arial;text-align:center;padding:20px}
+h1{color:#f59e0b;letter-spacing:6px;margin-top:20px;font-size:36px}
+.sub{color:#f59e0b88;font-size:12px;letter-spacing:2px}
+.card{max-width:380px;margin:20px auto;background:#111;border:1px solid #f59e0b;border-radius:20px;overflow:hidden}
+.card img{width:100%;height:380px;object-fit:cover}
+.topo{background:#1a1508;color:#f59e0b;padding:12px;display:flex;justify-content:space-between;font-weight:800;font-size:12px}
+.desc{background:#fff8e1;color:#222;padding:16px;text-align:left;font-size:14px;line-height:1.5}
+.btn{display:block;margin:16px;background:#f59e0b;color:#000;padding:14px;border-radius:10px;text-decoration:none;font-weight:900}
+.botoes{display:flex;gap:10px;justify-content:center;margin-top:20px}
+.botoes button{width:50px;height:50px;border-radius:50%;border:2px solid #f59e0b;background:#fff;font-size:20px}
+.botoes.ativo{background:#f59e0b;color:#000}
 </style>
 </head>
 <body>
-<header><div class="logo">WDECAR <span>| Gomes</span></div><div>Cianorte PR</div></header>
-<div class="hero">
-<h1>Sites <span>Black & Gold</span> que vendem</h1>
-<p>Meu portfólio - Criação de sites profissionais</p>
-<a class="btn" href="https://wa.me/5544988646234">WhatsApp</a>
+<h1>VIDA NOVA</h1>
+<div class="sub">CIANORTE - PR | DEMO WDECAR</div>
+
+<div class="card">
+<img id="foto" src="https://images.unsplash.com/photo-1504052434569-70ad5836ab65?w=600">
+<div class="topo"><span id="nome">PASTOR MARCOS</span><span id="tag">JOVENS</span></div>
+<div class="desc" id="texto">Ministério de Jovens com paixão por Jesus. Cultos Sábado 19h30. Rua das Flores 123 - Cianorte PR. Jeremias 29:11</div>
+<a class="btn" href="https://wa.me/5544988646234">FALAR NO WHATSAPP</a>
 </div>
-<div class="card"><h3>Modelo Igreja VIDA NOVA</h3><p>Demo de site para igreja</p><br><a href="./igreja/">→ Ver demonstração</a></div>
+
+<div class="botoes">
+<button onclick="m(0)" id="b0" class="ativo">🙏</button>
+<button onclick="m(1)" id="b1">👶</button>
+<button onclick="m(2)" id="b2">🎸</button>
+<button onclick="m(3)" id="b3">💑</button>
+<button onclick="m(4)" id="b4">🌍</button>
+</div>
+
+<script>
+const d=[
+{n:"PASTOR MARCOS",t:"JOVENS",f:"https://images.unsplash.com/photo-1504052434569-70ad5836ab65?w=600",x:"Ministério de Jovens. Cultos Sábado 19h30 com louvor e palavra. Rua das Flores 123 - Cianorte PR. Jeremias 29:11"},
+{n:"TIA ANA",t:"KIDS",f:"https://images.unsplash.com/photo-1596462502275-27bfdd2a6894?w=600",x:"Ministério Infantil com Tia Ana. Domingo 9h para 3 a 11 anos. Histórias bíblicas e lanche. Espaço seguro."},
+{n:"LOUVOR",t:"LOUVOR",f:"https://images.unsplash.com/photo-1514320290767-e2d6b037bb4d?w=600",x:"Louvor que toca a alma. Ensaios Quinta 20h. Se você canta ou toca, venha fazer parte."},
+{n:"CASAIS",t:"FAMÍLIA",f:"https://images.unsplash.com/photo-1529634597503-139d3726fed5?w=600",x:"Ministério de Casais. Encontro 2º Sábado 19h30 com jantar e palestra. Fortalecendo famílias."},
+{n:"MISSÕES",t:"MISSÕES",f:"https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600",x:"Ide por todo o mundo - Marcos 16:15. Apoio a 3 missionários. Próxima viagem Julho."}
+];
+function m(i){
+document.getElementById('foto').src=d[i].f;
+document.getElementById('nome').innerText=d[i].n;
+document.getElementById('tag').innerText=d[i].t;
+document.getElementById('texto').innerText=d[i].x;
+for(let k=0;k<5;k++)document.getElementById('b'+k).className=k==i?'ativo':'';
+}
+</script>
 </body>
 </html>
